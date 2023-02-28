@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    font-family: Montserrat;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: lightblue;
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.grid-item{
+    border: 1px solid white;
+    padding: 50px;
+    position: relative;
+    padding: 20px;
+    background-color: rgb(223, 163, 223);
+    color: yellow;
+}
+
+.grid-item:nth-child(odd){
+    background-color: #ff8924;
+
+}
+
+.grid-item::before{
+    content: 'Grid item';
+    position: absolute;
+    font-size:  25px;
+    font-weight: bold;
+    top: 10px;
+    left: 15px;
+}
